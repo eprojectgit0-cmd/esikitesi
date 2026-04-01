@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PC-CENTER</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </head>
+
+    <body>
+
+        <!-- Overlay -->
+        <div id="overlay" onclick="closeMenu()"></div>
+
+        <!-- Side Menu -->
+        <aside id="sideMenu">
+            <div class="sideTopRow">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <i class="bi bi-p-circle-fill fs-3 me-2"></i>
+                    <span class="fs-5">PC<span
+                            id="centerSide">-CENTER</span></span>
+                </a>
+                <button class="closeBtn" onclick="closeMenu()">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <div class="sideAcc">
+                <button class="acc">Login</button>
+                <button class="acc">Sign Up</button>
+            </div>
+            <hr class="sideHr">
+            <ul>
+                <li>
+                    <input type="checkbox" id="cat1">
+                    <label for="cat1">Mobiles <span
+                            class="arrow">&#8250;</span></label>
+                    <ul>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">Apple</a></li>
+                        <li><a href="#">Xiaomi</a></li>
+                        <li><a href="#">OnePlus</a></li>
+                        <li><a href="#">Realme</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="cat2">
+                    <label for="cat2">Wireless Earbuds <span
+                            class="arrow">&#8250;</span></label>
+                    <ul>
+                        <li><a href="#">Apple AirPods</a></li>
+                        <li><a href="#">Samsung Galaxy Buds</a></li>
+                        <li><a href="#">Sony</a></li>
+                        <li><a href="#">JBL</a></li>
+                        <li><a href="#">Anker Soundcore</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="cat3">
+                    <label for="cat3">Smart Watches <span
+                            class="arrow">&#8250;</span></label>
+                    <ul>
+                        <li><a href="#">Apple Watch</a></li>
+                        <li><a href="#">Samsung Galaxy Watch</a></li>
+                        <li><a href="#">Garmin</a></li>
+                        <li><a href="#">Xiaomi Band</a></li>
+                        <li><a href="#">Fitbit</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="cat4">
+                    <label for="cat4">Trimmers & Shavers <span
+                            class="arrow">&#8250;</span></label>
+                    <ul>
+                        <li><a href="#">Philips</a></li>
+                        <li><a href="#">Braun</a></li>
+                        <li><a href="#">Remington</a></li>
+                        <li><a href="#">Panasonic</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="cat5">
+                    <label for="cat5">Power Banks <span
+                            class="arrow">&#8250;</span></label>
+                    <ul>
+                        <li><a href="#">Anker</a></li>
+                        <li><a href="#">Baseus</a></li>
+                        <li><a href="#">Xiaomi</a></li>
+                        <li><a href="#">Samsung</a></li>
+                        <li><a href="#">10000 mAh</a></li>
+                        <li><a href="#">20000 mAh</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="cat6">
+                    <label for="cat6">Wall Chargers <span
+                            class="arrow">&#8250;</span></label>
+                    <ul>
+                        <li><a href="#">Fast Charging</a></li>
+                        <li><a href="#">USB-C</a></li>
+                        <li><a href="#">Multi-Port</a></li>
+                        <li><a href="#">Anker</a></li>
+                        <li><a href="#">Baseus</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="cat7">
+                    <label for="cat7">Bluetooth Speakers <span
+                            class="arrow">&#8250;</span></label>
+                    <ul>
+                        <li><a href="#">JBL</a></li>
+                        <li><a href="#">Sony</a></li>
+                        <li><a href="#">Bose</a></li>
+                        <li><a href="#">Marshall</a></li>
+                        <li><a href="#">Anker Soundcore</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="checkbox" id="cat8">
+                    <label for="cat8">Tablets <span
+                            class="arrow">&#8250;</span></label>
+                    <ul>
+                        <li><a href="#">Apple iPad</a></li>
+                        <li><a href="#">Samsung Galaxy Tab</a></li>
+                        <li><a href="#">Xiaomi Pad</a></li>
+                        <li><a href="#">Lenovo Tab</a></li>
+                        <li><a href="#">Huawei MatePad</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <hr class="sideHr">
+            <nav class="sideNav">
+                <a href="#">About</a>
+                <a href="#">FAQs</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Press & Blog</a>
+                <a href="#">Installments Plan</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Warranty Center</a>
+            </nav>
+        </aside>
+
+        <!-- Heading Marquee -->
+        <div class="heading">
+            <div class="anchor">
+                <marquee behavior direction="left">
+                    <a href="#">Home</a>
+                    <a href="#" class="promenu-open">Products</a>
+                    <a href="#" class="conmenu-open">Contact Us</a>
+                    <a href="#" class="faqmenu-open">Help & FAQs</a>
+                    <a href="#" class="affmenu-open">Join our Affiliate Program</a>
+                    <a href="#">Order Tracking</a>
+                    <a href="#">My Account</a>
+                    <a href="#">Quick Order</a>
+                    <a href="#">Request A Catalogue</a>
+                    <a href="#">Services</a>
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav">
+            <div class="container-fluid position-relative">
+                <button id="hamburger" onclick="toggleMenu()">
+                    <i class="bi bi-list fs-3"></i>
+                </button>
+                <a class="navbar-brand d-flex align-items-center ms-3" href="#">
+                    <i class="bi bi-p-circle-fill fs-3 me-2"></i>
+                    <span class="fs-5">PC<span id="center">-CENTER</span></span>
+                </a>
+                <form
+                    class="d-none d-lg-flex position-absolute start-50 translate-middle-x">
+                    <input class="form-control me-2" type="search"
+                        placeholder="Search">
+                    <button class="btn btn-outline-success"
+                        type="submit">Search</button>
+                </form>
+                <div class="w-100 d-lg-none mt-2">
+                    <form class="d-flex">
+                        <input class="form-control me-2" id="input"
+                            type="search" placeholder="Search">
+                        <button class="btn btn-outline-info"
+                            type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Popup -->
+        <div id="blur-bg" class="position-fixed top-0 start-0 w-100 h-100"
+            style="backdrop-filter: blur(8px); background: rgba(0,0,0,0.4); z-index:1040;"></div>
+        <div id="popupBox"
+            class="position-fixed top-50 start-50 translate-middle"
+            style="z-index:1050; width:320px;">
+            <div class="card shadow-lg border-0">
+                <div class="text-end p-2">
+                    <button class="btn-close" onclick="closePopup()"
+                        aria-label="Close"></button>
+                </div>
+                <div class="text-center px-4 pb-4">
+                    <div
+                        class="d-flex justify-content-center align-items-center mb-2">
+                        <i class="bi bi-p-circle-fill fs-3 me-2"></i>
+                        <span class="fs-5">PC<span
+                                id="center">-CENTER</span></span>
+                    </div>
+                    <p class="text-muted mb-2">Latest Tech Deals</p>
+                    <img src="assets/Latest Deals/samsung s26 ultra.png"
+                        class="img-fluid my-3"
+                        style="max-height:150px; object-fit:contain;">
+                    <h5 class="fw-bold text-success">Up to 30% OFF</h5>
+                    <p class="text-muted small">On laptops, accessories &
+                        more</p>
+                    <a href="#" class="btn btn-dark w-100 mt-2">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Slider -->
+        <div class="container-fluid col bg-light" id="category">
+            <div class="d-flex align-items-center overflow-auto">
+                <div class="text-center mx-3">
+                    <img
+                        src="assets/category-slider/mobile.png"
+                        class="img-fluid"
+                        style="width:50px; height:50px" alt>
+                    <p class="small mt-2 mb-0">Mobiles</p>
+                </div>
+                <div class="text-center mx-3">
+                    <img
+                        src="assets/category-slider/earbuds.png"
+                        class="img-fluid"
+                        style="width:50px; height:50px" alt>
+                    <p class="small mt-2 mb-0">Wireless Earbuds</p>
+                </div>
+                <div class="text-center mx-3">
+                    <img
+                        src="assets/category-slider/smartwatches.png"
+                        class="img-fluid"
+                        style="width:50px; height:50px" alt>
+                    <p class="small mt-2 mb-0">Smart Watches</p>
+                </div>
+                <div class="text-center mx-3">
+                    <img
+                        src="assets/category-slider/trimmer.png"
+                        class="img-fluid"
+                        style="width:50px; height:50px" alt>
+                    <p class="small mt-2 mb-0">Trimmers Shaver</p>
+                </div>
+                <div class="text-center mx-3">
+                    <img
+                        src="assets/category-slider/powerbank.png"
+                        class="img-fluid"
+                        style="width:50px; height:50px" alt>
+                    <p class="small mt-2 mb-0">Power Banks</p>
+                </div>
+                <div class="text-center mx-3">
+                    <img
+                        src="assets/category-slider/charger.png"
+                        class="img-fluid"
+                        style="width:50px; height:50px" alt>
+                    <p class="small mt-2 mb-0">Wall Chargers</p>
+                </div>
+                <div class="text-center mx-3">
+                    <img
+                        src="assets/category-slider/bluetooth speaker.png"
+                        class="img-fluid"
+                        style="width:50px; height:50px" alt>
+                    <p class="small mt-2 mb-0">Bluetooth Speakers</p>
+                </div>
+                <div class="text-center mx-3">
+                    <img
+                        src="assets/category-slider/tablet.png"
+                        class="img-fluid"
+                        style="width:50px; height:50px" alt>
+                    <p class="small mt-2 mb-0">Tablets</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel"
+            data-bs-interval="3000" data-bs-wrap="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel"
+                    data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel"
+                    data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel"
+                    data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/hero/flash friday.jpg"
+                        class="d-block w-100 img-fluid"
+                        style="max-height: 500px; object-fit: cover;" alt>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/hero/meezan bank.jpg"
+                        class="d-block w-100 img-fluid"
+                        style="max-height: 500px; object-fit: cover;" alt>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/hero/smart electro.avif"
+                        class="d-block w-100 img-fluid"
+                        style="max-height: 500px; object-fit: cover;" alt>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Products Section -->
+        <div class="pro-contain">
+            <div id="products-section">
+
+                <div id="products-header">
+                    <h2>Our <span>Products</span></h2>
+                    <div class="text-end p-2" bis_skin_checked="1">
+                        <button class="btn-close probtn-close"
+                            onclick="closePopup()" aria-label="Close"></button>
+                    </div>
+                </div>
+
+                <!-- Category Tabs -->
+                <div id="product-tabs">
+                    <button class="tab-btn active" data-cat="all">All</button>
+                    <button class="tab-btn" data-cat="mobiles">Mobiles</button>
+                    <button class="tab-btn" data-cat="earbuds">Earbuds</button>
+                    <button class="tab-btn" data-cat="watches">Smart
+                        Watches</button>
+                    <button class="tab-btn" data-cat="tablets">Tablets</button>
+                    <button class="tab-btn" data-cat="powerbanks">Power
+                        Banks</button>
+                    <button class="tab-btn"
+                        data-cat="speakers">Speakers</button>
+                    <button class="tab-btn"
+                        data-cat="chargers">Chargers</button>
+                    <button class="tab-btn"
+                        data-cat="trimmers">Trimmers</button>
+                </div>
+
+                <!-- Filters -->
+                <div id="product-filters">
+                    <div class="filter-group">
+                        <label>Brand</label>
+                        <select id="filter-brand">
+                            <option value="all">All Brands</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="apple">Apple</option>
+                            <option value="xiaomi">Xiaomi</option>
+                            <option value="jbl">JBL</option>
+                            <option value="anker">Anker</option>
+                            <option value="sony">Sony</option>
+                            <option value="philips">Philips</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Price</label>
+                        <select id="filter-price">
+                            <option value="all">All Prices</option>
+                            <option value="0-5000">Under RS 5,000</option>
+                            <option value="5000-30000">RS 5,000 –
+                                30,000</option>
+                            <option value="30000-100000">RS 30,000 –
+                                1,00,000</option>
+                            <option value="100000-999999">Above RS
+                                1,00,000</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Sort</label>
+                        <select id="filter-sort">
+                            <option value="default">Default</option>
+                            <option value="low-high">Price: Low to High</option>
+                            <option value="high-low">Price: High to Low</option>
+                        </select>
+                    </div>
+                    <button id="reset-filters">Reset</button>
+                </div>
+
+                <!-- No Results -->
+                <div id="no-results">No products found.</div>
+
+                <!-- Product Grid -->
+                <div id="product-grid">
+
+                    <!-- Mobiles -->
+                    <div class="product-card" data-cat="mobiles"
+                        data-brand="samsung" data-price="424999">
+                        <img src="assets/Latest Deals/samsung s26 ultra.png"
+                            alt="Samsung S26 Ultra">
+                        <div class="product-info">
+                            <span class="product-tag">Mobiles</span>
+                            <p class="product-name">Samsung Galaxy S26 Ultra</p>
+                            <p class="product-price"><sup>RS</sup> 4,24,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="mobiles"
+                        data-brand="apple" data-price="359999">
+                        <img
+                            src="assets/category-slider/mobile.png"
+                            alt="iPhone 16">
+                        <div class="product-info">
+                            <span class="product-tag">Mobiles</span>
+                            <p class="product-name">Apple iPhone 16</p>
+                            <p class="product-price"><sup>RS</sup> 3,59,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="mobiles"
+                        data-brand="xiaomi" data-price="89999">
+                        <img
+                            src="assets/category-slider/mobile.png"
+                            alt="Xiaomi 14">
+                        <div class="product-info">
+                            <span class="product-tag">Mobiles</span>
+                            <p class="product-name">Xiaomi 14 Pro</p>
+                            <p class="product-price"><sup>RS</sup> 89,999</p>
+                        </div>
+                    </div>
+
+                    <!-- Earbuds -->
+                    <div class="product-card" data-cat="earbuds"
+                        data-brand="apple" data-price="49999">
+                        <img src="assets/Latest Deals/Ear buds wirless.png"
+                            alt="AirPods Pro">
+                        <div class="product-info">
+                            <span class="product-tag">Earbuds</span>
+                            <p class="product-name">Apple AirPods Pro</p>
+                            <p class="product-price"><sup>RS</sup> 49,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="earbuds"
+                        data-brand="samsung" data-price="24999">
+                        <img src="assets/Latest Deals/Ear buds wirless.png"
+                            alt="Galaxy Buds">
+                        <div class="product-info">
+                            <span class="product-tag">Earbuds</span>
+                            <p class="product-name">Samsung Galaxy Buds 2</p>
+                            <p class="product-price"><sup>RS</sup> 24,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="earbuds"
+                        data-brand="anker" data-price="3999">
+                        <img src="assets/Latest Deals/Ear buds wirless.png"
+                            alt="Soundcore">
+                        <div class="product-info">
+                            <span class="product-tag">Earbuds</span>
+                            <p class="product-name">Anker Soundcore P3</p>
+                            <p class="product-price"><sup>RS</sup> 3,999</p>
+                        </div>
+                    </div>
+
+                    <!-- Smart Watches -->
+                    <div class="product-card" data-cat="watches"
+                        data-brand="apple" data-price="129999">
+                        <img src="assets/Latest Deals/smart watch.png"
+                            alt="Apple Watch">
+                        <div class="product-info">
+                            <span class="product-tag">Smart Watches</span>
+                            <p class="product-name">Apple Watch Series 10</p>
+                            <p class="product-price"><sup>RS</sup> 1,29,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="watches"
+                        data-brand="samsung" data-price="69999">
+                        <img src="assets/Latest Deals/smart watch.png"
+                            alt="Galaxy Watch">
+                        <div class="product-info">
+                            <span class="product-tag">Smart Watches</span>
+                            <p class="product-name">Samsung Galaxy Watch 7</p>
+                            <p class="product-price"><sup>RS</sup> 69,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="watches"
+                        data-brand="xiaomi" data-price="4999">
+                        <img src="assets/Latest Deals/smart watch.png"
+                            alt="Xiaomi Band">
+                        <div class="product-info">
+                            <span class="product-tag">Smart Watches</span>
+                            <p class="product-name">Xiaomi Smart Band 9</p>
+                            <p class="product-price"><sup>RS</sup> 4,999</p>
+                        </div>
+                    </div>
+
+                    <!-- Tablets -->
+                    <div class="product-card" data-cat="tablets"
+                        data-brand="samsung" data-price="186999">
+                        <img src="assets/Latest Deals/s11 tab ultra.png"
+                            alt="Galaxy Tab">
+                        <div class="product-info">
+                            <span class="product-tag">Tablets</span>
+                            <p class="product-name">Samsung Galaxy Tab S11</p>
+                            <p class="product-price"><sup>RS</sup> 1,86,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="tablets"
+                        data-brand="apple" data-price="299999">
+                        <img
+                            src="assets/category-slider/tablet.png"
+                            alt="iPad Pro">
+                        <div class="product-info">
+                            <span class="product-tag">Tablets</span>
+                            <p class="product-name">Apple iPad Pro M4</p>
+                            <p class="product-price"><sup>RS</sup> 2,99,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="tablets"
+                        data-brand="xiaomi" data-price="79999">
+                        <img
+                            src="assets/category-slider/tablet.png"
+                            alt="Xiaomi Pad">
+                        <div class="product-info">
+                            <span class="product-tag">Tablets</span>
+                            <p class="product-name">Xiaomi Pad 7 Pro</p>
+                            <p class="product-price"><sup>RS</sup> 79,999</p>
+                        </div>
+                    </div>
+
+                    <!-- Power Banks -->
+                    <div class="product-card" data-cat="powerbanks"
+                        data-brand="anker" data-price="7999">
+                        <img
+                            src="assets/category-slider/powerbank.png"
+                            alt="Anker Power Bank">
+                        <div class="product-info">
+                            <span class="product-tag">Power Banks</span>
+                            <p class="product-name">Anker 20000mAh Power
+                                Bank</p>
+                            <p class="product-price"><sup>RS</sup> 7,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="powerbanks"
+                        data-brand="samsung" data-price="4999">
+                        <img
+                            src="assets/category-slider/powerbank.png"
+                            alt="Samsung Power Bank">
+                        <div class="product-info">
+                            <span class="product-tag">Power Banks</span>
+                            <p class="product-name">Samsung 10000mAh Power
+                                Bank</p>
+                            <p class="product-price"><sup>RS</sup> 4,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="powerbanks"
+                        data-brand="xiaomi" data-price="3499">
+                        <img
+                            src="assets/category-slider/powerbank.png"
+                            alt="Xiaomi Power Bank">
+                        <div class="product-info">
+                            <span class="product-tag">Power Banks</span>
+                            <p class="product-name">Xiaomi 10000mAh Redmi</p>
+                            <p class="product-price"><sup>RS</sup> 3,499</p>
+                        </div>
+                    </div>
+
+                    <!-- Speakers -->
+                    <div class="product-card" data-cat="speakers"
+                        data-brand="jbl" data-price="14999">
+                        <img
+                            src="assets/category-slider/bluetooth speaker.png"
+                            alt="JBL Charge">
+                        <div class="product-info">
+                            <span class="product-tag">Speakers</span>
+                            <p class="product-name">JBL Charge 5</p>
+                            <p class="product-price"><sup>RS</sup> 14,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="speakers"
+                        data-brand="sony" data-price="19999">
+                        <img
+                            src="assets/category-slider/bluetooth speaker.png"
+                            alt="Sony Speaker">
+                        <div class="product-info">
+                            <span class="product-tag">Speakers</span>
+                            <p class="product-name">Sony SRS-XB33</p>
+                            <p class="product-price"><sup>RS</sup> 19,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="speakers"
+                        data-brand="anker" data-price="4999">
+                        <img
+                            src="assets/category-slider/bluetooth speaker.png"
+                            alt="Anker Speaker">
+                        <div class="product-info">
+                            <span class="product-tag">Speakers</span>
+                            <p class="product-name">Anker Soundcore 3</p>
+                            <p class="product-price"><sup>RS</sup> 4,999</p>
+                        </div>
+                    </div>
+
+                    <!-- Chargers -->
+                    <div class="product-card" data-cat="chargers"
+                        data-brand="anker" data-price="2999">
+                        <img
+                            src="assets/category-slider/charger.png"
+                            alt="Anker Charger">
+                        <div class="product-info">
+                            <span class="product-tag">Chargers</span>
+                            <p class="product-name">Anker 65W GaN Charger</p>
+                            <p class="product-price"><sup>RS</sup> 2,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="chargers"
+                        data-brand="samsung" data-price="1999">
+                        <img
+                            src="assets/category-slider/charger.png"
+                            alt="Samsung Charger">
+                        <div class="product-info">
+                            <span class="product-tag">Chargers</span>
+                            <p class="product-name">Samsung 45W Super Fast
+                                Charger</p>
+                            <p class="product-price"><sup>RS</sup> 1,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="chargers"
+                        data-brand="apple" data-price="3499">
+                        <img
+                            src="assets/category-slider/charger.png"
+                            alt="Apple Charger">
+                        <div class="product-info">
+                            <span class="product-tag">Chargers</span>
+                            <p class="product-name">Apple 30W USB-C Charger</p>
+                            <p class="product-price"><sup>RS</sup> 3,499</p>
+                        </div>
+                    </div>
+
+                    <!-- Trimmers -->
+                    <div class="product-card" data-cat="trimmers"
+                        data-brand="philips" data-price="4999">
+                        <img
+                            src="assets/category-slider/trimmer.png"
+                            alt="Philips Trimmer">
+                        <div class="product-info">
+                            <span class="product-tag">Trimmers</span>
+                            <p class="product-name">Philips Series 5000
+                                Trimmer</p>
+                            <p class="product-price"><sup>RS</sup> 4,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="trimmers"
+                        data-brand="philips" data-price="2999">
+                        <img
+                            src="assets/category-slider/trimmer.png"
+                            alt="Philips Shaver">
+                        <div class="product-info">
+                            <span class="product-tag">Trimmers</span>
+                            <p class="product-name">Philips AquaTouch Shaver</p>
+                            <p class="product-price"><sup>RS</sup> 2,999</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-cat="trimmers"
+                        data-brand="sony" data-price="3499">
+                        <img
+                            src="assets/category-slider/trimmer.png"
+                            alt="Trimmer">
+                        <div class="product-info">
+                            <span class="product-tag">Trimmers</span>
+                            <p class="product-name">Panasonic Beard Trimmer</p>
+                            <p class="product-price"><sup>RS</sup> 3,499</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact us -->
+        <div class="contact-contain">
+            <div id="contact-section">
+
+                <div id="contact-header">
+                    <div class="text-end p-2" bis_skin_checked="1">
+                        <button class="btn-close conbtn-close"
+                            onclick="closePopup()"></button>
+                    </div>
+                </div>
+
+                <div id="contact-content">
+                    <div class="contact-wrapper">
+
+                        <div class="section-header">
+                            <h5>Get in touch</h5>
+                            <p>We are here for you! how can we help, We are here
+                                for you!</p>
+                        </div>
+
+                        <div class="main-content">
+
+                            <div class="form-container">
+                                <h6>Let's Connect</h6>
+                                <h2>Send Your Message</h2>
+                                <p class="desc">
+                                    The contact form is currently inactive. Get
+                                    a functional and working contact form with
+                                    Ajax & PHP in a few minutes. Just copy and
+                                    paste the files, add a little code and
+                                    you're done. <a href="#">Download Now.</a>
+                                </p>
+
+                                <form>
+                                    <div class="input-grid">
+                                        <input type="text"
+                                            placeholder="Your Name">
+                                        <input type="email"
+                                            placeholder="Your Email">
+                                        <input type="text"
+                                            placeholder="Your Phone">
+                                        <input type="text"
+                                            placeholder="Your Project">
+                                        <div class="full-width">
+                                            <input type="text"
+                                                placeholder="Subject">
+                                        </div>
+                                        <div class="full-width">
+                                            <textarea
+                                                placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit"
+                                        class="submit-btn">Send Message</button>
+                                </form>
+                            </div>
+
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.3975066928!2d-74.11976373024844!3d40.697670063381435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                                    allowfullscreen loading="lazy"></iframe>
+                            </div>
+
+                        </div>
+
+                        <div class="contact-info-grid">
+                            <div class="info-item">
+                                <div class="icon-circle"><i
+                                        class="fa-solid fa-location-dot"></i></div>
+                                <h4>Address</h4>
+                                <p>123 Street New York, USA</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-circle"><i
+                                        class="fa-solid fa-envelope"></i></div>
+                                <h4>Mail Us</h4>
+                                <p>info@example.com</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-circle"><i
+                                        class="fa-solid fa-phone"></i></div>
+                                <h4>Telephone</h4>
+                                <p>(+012) 3456 7890</p>
+                            </div>
+                            <div class="info-item">
+                                <div class="icon-circle"><i
+                                        class="fa-solid fa-globe"></i></div>
+                                <h4>Yoursite@ex.com</h4>
+                                <p>(+012) 3456 7890</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Help/Faqs  -->
+
+        <div class="faqs-contain">
+            <div id="faqs-section">
+
+                <div id="faqs-header">
+                    <div class="text-end p-2" bis_skin_checked="1">
+                        <button class="btn-close faqbtn-close"
+                            onclick="closePopup()"></button>
+                    </div>
+                </div>
+                <div class="faq-wrapper">
+
+                    <div class="faq-header">
+                        <h5>Support Center</h5>
+                        <h2>How can we help you?</h2>
+                    </div>
+
+                    <div class="search-box">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="Search for answers...">
+                    </div>
+
+                    <div class="faq-list">
+
+                        <div class="faq-item">
+                            <details open>
+                                <summary>How do I get started with my
+                                    project?</summary>
+                                <div class="faq-content">
+                                    To get started, simply fill out the
+                                    "Send Your Message" form on our contact
+                                    page. Our team will review your requirements
+                                    and get back to you within 24 hours with a
+                                    project roadmap and initial quote.
+                                </div>
+                            </details>
+                        </div>
+
+                        <div class="faq-item">
+                            <details>
+                                <summary>What payment methods do you
+                                    accept?</summary>
+                                <div class="faq-content">
+                                    We accept all major credit cards, PayPal,
+                                    and bank transfers. For long-term projects,
+                                    we also offer milestone-based payment plans
+                                    to ensure flexibility for our clients.
+                                </div>
+                            </details>
+                        </div>
+
+                        <div class="faq-item">
+                            <details>
+                                <summary>Can I change my project plan
+                                    later?</summary>
+                                <div class="faq-content">
+                                    Yes, you can upgrade or modify your project
+                                    scope at any time. Just reach out to your
+                                    dedicated project manager, and we will
+                                    adjust the timeline and deliverables
+                                    accordingly.
+                                </div>
+                            </details>
+                        </div>
+
+                        <div class="faq-item">
+                            <details>
+                                <summary>Is there technical support available
+                                    24/7?</summary>
+                                <div class="faq-content">
+                                    We offer 24/7 emergency technical support
+                                    for our Premium Tier clients. For standard
+                                    projects, our support team is available
+                                    Monday through Friday, 9:00 AM to 6:00 PM
+                                    EST.
+                                </div>
+                            </details>
+                        </div>
+
+                        <div class="faq-item">
+                            <details>
+                                <summary>How secure is my data with your
+                                    service?</summary>
+                                <div class="faq-content">
+                                    Data security is our top priority. We use
+                                    industry-standard SSL encryption and follow
+                                    strict GDPR compliance guidelines to ensure
+                                    that your project details and personal info
+                                    remain private.
+                                </div>
+                            </details>
+                        </div>
+
+                    </div>
+
+                    <div class="faq-footer">
+                        <p>Still have questions? We're here to help you every
+                            step of the way.</p>
+                        <a href="#" class="contact-link">Contact Support Team <i
+                                class="fa fa-arrow-right"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- Join our Affiliate Program  -->
+
+
+            <div class="aff-contain">
+            <div id="aff-section">
+
+                <div id="aff-header">
+                    <div class="text-end p-2" bis_skin_checked="1">
+                        <button class="btn-close affbtn-close"
+                            onclick="closePopup()"></button>
+                    </div>
+                </div>
+                <section class="affiliate-hero">
+        <div class="container">
+            <h1>Partner with PC-CENTER</h1>
+            <p>Earn up to 10% commission on every successful referral. Join the fastest-growing tech community today!</p>
+            <a href="#join-form" class="join-btn">Get Started Now</a>
+        </div>
+    </section>
+
+    <section class="container my-5 py-5">
+        <h2 class="text-center mb-5" style="color: #061161;">How It <span>Works</span></h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="step-card">
+                    <div class="step-icon"><i class="bi bi-person-plus"></i></div>
+                    <h4>1. Sign Up</h4>
+                    <p>Register for free and get access to your personal affiliate dashboard.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="step-card">
+                    <div class="step-icon"><i class="bi bi-share"></i></div>
+                    <h4>2. Promote</h4>
+                    <p>Share your unique link on social media, blogs, or with friends.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="step-card">
+                    <div class="step-icon"><i class="bi bi-cash-stack"></i></div>
+                    <h4>3. Earn</h4>
+                    <p>Receive commissions for every purchase made through your link.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4" style="color: #061161;">Commission <span>Structure</span></h2>
+        <div class="table-responsive commission-table">
+            <table class="table table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th class="p-3">Category</th>
+                        <th class="p-3">Commission Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="p-3">Accessories & Power Banks</td><td class="p-3 fw-bold text-success">10%</td></tr>
+                    <tr><td class="p-3">Wireless Earbuds & Speakers</td><td class="p-3 fw-bold text-success">8%</td></tr>
+                    <tr><td class="p-3">Smart Watches</td><td class="p-3 fw-bold text-success">5%</td></tr>
+                    <tr><td class="p-3">Mobiles & Tablets</td><td class="p-3 fw-bold text-success">3%</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <div class="cta-section" id="join-form">
+        <h2 style="color: #780206;">Ready to Earn?</h2>
+        <p>Fill out the form below to apply for our program.</p>
+        
+        <div class="container mt-4" style="max-width: 600px; text-align: left;">
+            <form class="bg-white p-4 rounded shadow-sm">
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" placeholder="John Doe">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Platform (YouTube/Instagram/Blog)</label>
+                    <input type="text" class="form-control" placeholder="Link to your profile">
+                </div>
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+    </div>
+                </div>
+
+
+
+
+
+
+            <!-- Banner -->
+            <div id="banner"
+                class="container-fluid d-flex justify-content-center my-4">
+                <img src="assets/hero ka neecha/hero ka neecha.jpg"
+                    class="img-fluid w-100 rounded-4 shadow-lg"
+                    alt="Asli Warranty Challenge Banner" style="
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 85px;
+                border-bottom-right-radius: 85px;">
+            </div>
+
+            <!-- Latest Deals -->
+            <div id="head-deals">
+                <h2 id="head" class="text-center text-white">Latest <span
+                        id="d">deals</span></h2>
+                <div id="deals">
+                    <div class="card deal-card" id="card1">
+                        <img src="assets/computer parts/CPU cooler.png"
+                            class="card-img-top" alt>
+                        <div class="card-body">
+                            <p class="card-text para">CPU Cooler</p>
+                            <p class="card-text"><sup>RS</sup>
+                                <span>2,000</span></p>
+                            <img src="assets/fast delivery/fast-delivery.svg"
+                                class="delivery-icon" alt>
+                        </div>
+                    </div>
+                    <div class="card deal-card" id="card2">
+                        <img src="assets/Latest Deals/Audionic Theatre.png"
+                            class="card-img-top" alt>
+                        <div class="card-body">
+                            <p class="card-text para">Audionic Pace-7 Home
+                                Theater
+                                System</p>
+                            <p class="card-text"><sup>RS</sup>
+                                <span>25,000</span></p>
+                            <img src="assets/fast delivery/fast-delivery.svg"
+                                class="delivery-icon" alt>
+                        </div>
+                    </div>
+                    <div class="card deal-card" id="card3">
+                        <img src="assets/Latest Deals/Ear buds wirless.png"
+                            class="card-img-top" alt>
+                        <div class="card-body">
+                            <p class="card-text para">Wireless Earbuds</p>
+                            <p class="card-text"><sup>RS</sup>
+                                <span>2,000</span></p>
+                            <img src="assets/fast delivery/fast-delivery.svg"
+                                class="delivery-icon" alt>
+                        </div>
+                    </div>
+                </div>
+                <div id="deals2">
+                    <div class="card deal-card" id="card4">
+                        <img src="assets/Latest Deals/samsung s26 ultra.png"
+                            class="card-img-top" alt>
+                        <div class="card-body">
+                            <p class="card-text para">Samsung Galaxy S26
+                                Ultra</p>
+                            <p class="card-text"><sup>RS</sup> 424,999</p>
+                            <img src="assets/fast delivery/fast-delivery.svg"
+                                class="delivery-icon" alt>
+                        </div>
+                    </div>
+                    <div class="card deal-card" id="card5">
+                        <img src="assets/Latest Deals/s11 tab ultra.png"
+                            class="card-img-top" alt>
+                        <div class="card-body">
+                            <p class="card-text para">Samsung Galaxy Tab S11
+                                Wifi</p>
+                            <p class="card-text"><sup>RS</sup> 186,999</p>
+                            <img src="assets/fast delivery/fast-delivery.svg"
+                                class="delivery-icon" alt>
+                        </div>
+                    </div>
+                    <div class="card deal-card" id="card6">
+                        <img src="assets/Latest Deals/smart watch.png"
+                            class="card-img-top" alt>
+                        <div class="card-body">
+                            <p class="card-text para">Smart Watch</p>
+                            <p class="card-text"><sup>RS</sup> 3,000</p>
+                            <img src="assets/fast delivery/fast-delivery.svg"
+                                class="delivery-icon" alt>
+                        </div>
+                    </div>
+                </div>
+                <div id="deals3">
+                    <div class="card deal-card" id="card7">
+                        <img src="assets/Latest Deals/Apple Macbook Air 13.png"
+                            class="card-img-top" alt>
+                        <div class="card-body">
+                            <p class="card-text para">Apple Macbook Air 13 MW123
+                                M4
+                                Chip</p>
+                            <p class="card-text"><sup>RS</sup> 299,999</p>
+                            <img src="assets/fast delivery/fast-delivery.svg"
+                                class="delivery-icon" alt>
+                        </div>
+                    </div>
+                    <div class="card deal-card" id="card8">
+                        <img src="assets/computer parts/hard drive.png"
+                            class="card-img-top" alt>
+                        <div class="card-body">
+                            <p class="card-text para">Hard-drive Storage CPU
+                                500GB</p>
+                            <p class="card-text"><sup>RS</sup> 5,000</p>
+                            <img src="assets/fast delivery/fast-delivery.svg"
+                                class="delivery-icon" alt>
+                        </div>
+                    </div>
+                    <div class="card deal-card" id="card9">
+                        <img src="assets/cables/Sata CAble.png"
+                            class="card-img-top"
+                            alt>
+                        <div class="card-body">
+                            <p class="card-text para">Sata Cable</p>
+                            <p class="card-text"><sup>RS</sup> 1,500</p>
+                            <img src="assets/fast delivery/fast-delivery.svg"
+                                class="delivery-icon" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Banner -->
+            <div class="container-fluid d-flex justify-content-center my-4">
+                <img src="assets/New folder/banner.jpg"
+                    class="img-fluid w-100 rounded-4 shadow-lg" alt="Banner">
+            </div>
+
+            <!-- Maps Section -->
+            <div class="maps">
+                <div class="maps-head">
+                    <h1>Our Locations</h1>
+                </div>
+                <div class="maps-det">
+                    <div class="maps-left">
+                        <div class="loc1">
+                            <h5>ABC Branch</h5>
+                            <h6>ABC, Karachi</h6>
+                            <h6>Mon – Sat</h6>
+                            <h6>10 AM – 9 PM</h6>
+                        </div>
+                        <div class="loc2">
+                            <h5>ABC Branch</h5>
+                            <h6>ABC, Karachi</h6>
+                            <h6>Mon – Sat</h6>
+                            <h6>10 AM – 9 PM</h6>
+                        </div>
+                        <div class="loc3">
+                            <h5>ABC Branch</h5>
+                            <h6>ABC, Karachi</h6>
+                            <h6>Mon – Sat</h6>
+                            <h6>10 AM – 9 PM</h6>
+                        </div>
+                        <div class="loc4">
+                            <h5>ABC Branch</h5>
+                            <h6>ABC, Karachi</h6>
+                            <h6>Mon – Sat</h6>
+                            <h6>10 AM – 9 PM</h6>
+                        </div>
+                    </div>
+                    <div class="maps-right">
+                        <iframe
+                            src="https://maps.google.com/maps?width=600&height=400&hl=en&q=karachi+pakistan&t=&z=12&ie=UTF8&iwloc=B&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer-48201">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-md-4 mb-4 mb-md-0 pe-md-5">
+                            <a href="#" class="footer-site-logo mb-3">
+                                <i class="bi bi-p-circle-fill fs-4"></i>
+                                PC<span style="color:#780206;">-CENTER</span>
+                            </a>
+                            <p class="mt-3">Your one-stop destination for the
+                                latest
+                                tech, gadgets, and accessories. Fast delivery,
+                                genuine products, and unbeatable prices.</p>
+                            <ul class="social mt-4">
+                                <li><a href="#"><i
+                                            class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i
+                                            class="bi bi-twitter-x"></i></a></li>
+                                <li><a href="#"><i
+                                            class="bi bi-facebook"></i></a></li>
+                                <li><a href="#"><i
+                                            class="bi bi-youtube"></i></a></li>
+                                <li><a href="#"><i
+                                            class="bi bi-tiktok"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md mb-4 mb-md-0">
+                            <p class="footer-col-heading">Quick Links</p>
+                            <ul class="list-unstyled nav-links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Order Tracking</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md mb-4 mb-md-0">
+                            <p class="footer-col-heading">Categories</p>
+                            <ul class="list-unstyled nav-links">
+                                <li><a href="#">Mobiles</a></li>
+                                <li><a href="#">Tablets</a></li>
+                                <li><a href="#">Earbuds</a></li>
+                                <li><a href="#">Smart Watches</a></li>
+                                <li><a href="#">Power Banks</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md mb-4 mb-md-0">
+                            <p class="footer-col-heading">Support</p>
+                            <ul class="list-unstyled nav-links">
+                                <li><a href="#">Help & FAQs</a></li>
+                                <li><a href="#">Warranty Center</a></li>
+                                <li><a href="#">Installments Plan</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md mb-4 mb-md-0">
+                            <p class="footer-col-heading">Contact</p>
+                            <ul class="list-unstyled nav-links">
+                                <li><a href="tel:+921234567890"><i
+                                            class="bi bi-telephone me-2"></i>+92
+                                        123
+                                        456 7890</a></li>
+                                <li><a href="mailto:info@pccenter.pk"><i
+                                            class="bi bi-envelope me-2"></i>info@pccenter.pk</a></li>
+                                <li><a href="#"><i
+                                            class="bi bi-geo-alt me-2"></i>Karachi,
+                                        Pakistan</a></li>
+                            </ul>
+                            <a href="#" class="btn btn-tertiary mt-3">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="copyright">
+                                <p><small>&copy; 2025 PC-CENTER. All Rights
+                                        Reserved.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <script
+                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+                crossorigin="anonymous"></script>
+
+            <script src="app..js"></script>
+
+        </body>
+    </html>
