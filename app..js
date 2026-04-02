@@ -208,5 +208,7 @@ $(document).ready(function () {
         $("#popupBox").css({ display: "none" });
         $("#blur-bg").css({ display: "none" });
     });
-
+    $(".side-links").click(function(){
+        $("#sideMenu").css({ left: "-350vw" });
+    })
 });
