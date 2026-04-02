@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif; 
 }
 body {
     background-color: #fff;
@@ -60,6 +60,644 @@ body {
     background: linear-gradient(to bottom, #ddefbb, #ffeeee);
 }
 
+/* Dark and light mode  */
+#dark-mode{
+    position: fixed;
+    z-index: 20;
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+    background: transparent;
+    color: rgb(223, 201, 75);
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    /* border-radius: 50%; */
+    display: block;
+    align-items: center;
+    transform: rotate(-20deg);
+}
+#light-mode{
+    position: fixed;
+    z-index: 20;
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+    background: transparent;
+    color: rgb(223, 201, 75);
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    /* border-radius: 50%; */
+    display: none;
+    align-items: center;
+    transform: rotate(-20deg);
+}
+/* ── Dark Mode ── */
+
+body.dark {
+    background-color: #0a0e1a;
+    color: #e8eaf0;
+}
+
+body.dark #nav {
+    background: linear-gradient(to bottom, #0f1729, #111827);
+}
+
+body.dark .heading {
+    background: linear-gradient(to right, #020a3a, #3d0103);
+}
+
+/* ── Sidebar ── */
+
+body.dark #sideMenu {
+    background: #0f1729;
+}
+
+body.dark #sideMenu ul li label {
+    color: #e8eaf0;
+}
+
+body.dark #sideMenu ul li label:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+body.dark #sideMenu ul li input[type="checkbox"]:checked + label {
+    background: rgba(255, 255, 255, 0.08);
+    color: #e8eaf0;
+}
+
+body.dark #sideMenu ul li ul li a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+body.dark #sideMenu ul li ul li a:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #e8eaf0;
+}
+
+body.dark .sideNav a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+body.dark .sideNav a:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #e8eaf0;
+}
+
+body.dark .sideTopRow .navbar-brand {
+    color: #e8eaf0;
+}
+
+body.dark .closeBtn {
+    color: #e8eaf0;
+}
+
+body.dark .acc {
+    color: #e8eaf0;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark .sideHr {
+    border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ── Overlay ── */
+
+body.dark #overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* ── Category Slider ── */
+
+body.dark #category {
+    background: #0a0e1a;
+}
+
+body.dark #category p {
+    color: #8892a4;
+}
+
+/* ── Products Panel ── */
+
+body.dark #products-section {
+    background: linear-gradient(to bottom, #0d1117, #111827);
+}
+
+body.dark #products-header h2 {
+    color: #e8eaf0;
+}
+
+body.dark .product-card {
+    background: #111827;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .product-name {
+    color: #e8eaf0;
+}
+
+body.dark .product-price {
+    color: #7aa4ff;
+}
+
+body.dark #product-filters {
+    background: #111827;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .filter-group label {
+    color: #8892a4;
+}
+
+body.dark .filter-group select {
+    background: #0a0e1a;
+    color: #e8eaf0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark .tab-btn {
+    background: #111827;
+    color: #8892a4;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark .tab-btn.active {
+    background: linear-gradient(to right, #061161, #780206);
+    color: white;
+}
+
+body.dark #no-results {
+    color: #e84040;
+}
+
+/* ── Deal Cards ── */
+
+body.dark .card {
+    background: #111827;
+    color: #e8eaf0;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .card .para {
+    color: #e8eaf0;
+}
+
+/* ── Contact Panel ── */
+
+body.dark #contact-section {
+    background: linear-gradient(to bottom, #0d1117, #111827);
+}
+
+body.dark .form-container h2 {
+    color: #e8eaf0;
+}
+
+body.dark .form-container .desc {
+    color: #8892a4;
+}
+
+body.dark .info-item h4 {
+    color: #e8eaf0;
+}
+
+body.dark .info-item p {
+    color: #8892a4;
+}
+
+/* ── FAQs Panel ── */
+
+body.dark .faqs-contain {
+    background: #0d1117;
+}
+
+body.dark #faqs-section {
+    background: #0d1117;
+}
+
+body.dark .faq-wrapper {
+    background: #111827;
+    color: #e8eaf0;
+}
+
+body.dark .faq-header h2 {
+    color: #e8eaf0;
+}
+
+body.dark summary {
+    color: #e8eaf0;
+}
+
+body.dark .faq-content {
+    color: #8892a4;
+}
+
+body.dark .faq-item {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .faq-footer {
+    background: #0a0e1a;
+}
+
+body.dark .faq-footer p {
+    color: #8892a4;
+}
+
+/* ── Affiliate Panel ── */
+
+body.dark #aff-section {
+    background: linear-gradient(to bottom, #0d1117, #111827);
+}
+
+body.dark .step-card {
+    background: #111827;
+    border-color: rgba(255, 255, 255, 0.08);
+    color: #e8eaf0;
+}
+
+body.dark .step-card p {
+    color: #8892a4;
+}
+
+body.dark .commission-table {
+    background: #111827;
+}
+
+body.dark .commission-table tbody tr {
+    background: #111827;
+    color: #e8eaf0;
+}
+
+body.dark .commission-table tbody td {
+    border-color: rgba(255, 255, 255, 0.08);
+    color: #e8eaf0;
+}
+
+body.dark .cta-section {
+    background: #0f1729;
+    color: #e8eaf0;
+}
+
+body.dark .cta-section h2 {
+    color: #e84040;
+}
+
+/* ── Order Tracking Panel ── */
+
+body.dark #otrack-section {
+    background: linear-gradient(to bottom, #0d1117, #111827);
+}
+
+body.dark .tracking-contain {
+    background: #111827;
+    color: #e8eaf0;
+}
+
+body.dark .search-wrapper input {
+    background: #0a0e1a;
+    color: #e8eaf0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark .step p {
+    color: #8892a4;
+}
+
+body.dark .order-stepper::before {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* ── My Account Panel ── */
+
+body.dark #myacc-section {
+    background: linear-gradient(to bottom, #0d1117, #111827);
+}
+
+body.dark .account-contain {
+    background: #111827;
+}
+
+body.dark .account-sidebar {
+    background: #0f1729;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .user-info {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .user-info h4,
+body.dark .user-info p {
+    color: #e8eaf0;
+}
+
+body.dark .account-nav li {
+    color: #8892a4;
+}
+
+body.dark .account-nav li.active,
+body.dark .account-nav li:hover {
+    background: rgba(255, 140, 0, 0.1);
+    color: #ff8c00;
+}
+
+body.dark .welcome-box {
+    background: #0f1729;
+    border-color: rgba(255, 255, 255, 0.08);
+    color: #e8eaf0;
+}
+
+body.dark .welcome-box p {
+    color: #8892a4;
+}
+
+/* ── Quick Order Panel ── */
+
+body.dark #quicko-section {
+    background: linear-gradient(to bottom, #0d1117, #111827);
+}
+
+body.dark .quick-order-contain {
+    background: #111827;
+    color: #e8eaf0;
+}
+
+body.dark .quick-order-table th {
+    background: #0f1729;
+    color: #7aa4ff;
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .quick-order-table td {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    color: #e8eaf0;
+}
+
+body.dark .quick-order-actions {
+    border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .quick-order-summary h4 {
+    color: #e8eaf0;
+}
+
+body.dark .btn-secondary-pc {
+    background: #0f1729;
+    color: #e8eaf0;
+}
+
+/* ── Catalogue Panel ── */
+
+body.dark #catalog-section {
+    background: linear-gradient(to bottom, #0d1117, #111827);
+}
+
+body.dark .catalogue-contain {
+    background: #111827;
+    color: #e8eaf0;
+}
+
+body.dark .type-box {
+    background: #0f1729;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #e8eaf0;
+}
+
+body.dark .form-footer {
+    color: #8892a4;
+}
+
+/* ── Services Panel ── */
+
+body.dark #service-section {
+    background: linear-gradient(to bottom, #0d1117, #111827);
+}
+
+body.dark .service-card {
+    background: #111827;
+    border-color: rgba(255, 255, 255, 0.08);
+    color: #e8eaf0;
+}
+
+body.dark .service-card p {
+    color: #8892a4;
+}
+
+body.dark .service-card h3 {
+    color: #e8eaf0;
+}
+
+body.dark .service-list li {
+    color: #8892a4;
+}
+
+/* ── Maps ── */
+
+body.dark .maps {
+    background: linear-gradient(to bottom, #0d1117, #0a0e1a);
+}
+
+body.dark .maps-head h1 {
+    color: #e8eaf0;
+}
+
+body.dark .maps-left .loc1,
+body.dark .maps-left .loc2,
+body.dark .maps-left .loc3,
+body.dark .maps-left .loc4 {
+    background: #111827;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .maps-left h5 {
+    color: #e84040;
+}
+
+body.dark .maps-left h6 {
+    color: #8892a4;
+}
+
+/* ── Footer ── */
+
+body.dark .footer-48201 {
+    background: linear-gradient(to bottom, #0d1117, #111827);
+    color: #e8eaf0;
+}
+
+body.dark .footer-48201 p {
+    color: #8892a4;
+}
+
+body.dark .footer-48201 .nav-links li a,
+body.dark footer ul li a {
+    color: #8892a4;
+}
+
+body.dark .footer-48201 .nav-links li a:hover,
+body.dark footer ul li a:hover {
+    color: #e84040;
+}
+
+body.dark .footer-col-heading {
+    color: #7aa4ff;
+}
+
+body.dark .footer-48201 .footer-site-logo {
+    color: #e8eaf0;
+}
+
+body.dark .footer-48201 .social li a {
+    background: rgba(255, 255, 255, 0.06);
+    color: #e8eaf0;
+}
+
+body.dark .footer-48201 .copyright {
+    border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .footer-48201 .copyright p {
+    color: #8892a4;
+}
+
+/* ── Global inputs in dark ── */
+
+body.dark input,
+body.dark textarea {
+    background: #0a0e1a;
+    color: #e8eaf0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+    color: #8892a4;
+}
+
+body.dark #center,
+body.dark #centerSide {
+    text-shadow: none;
+    color: #7aa4ff;
+}
+
+/* ── Icons & Nav Text ── */
+
+body.dark #hamburger i {
+    color: #e8eaf0;
+}
+
+body.dark .closeBtn i {
+    color: #e8eaf0;
+}
+
+body.dark .btn-close {
+    filter: invert(1);
+}
+
+body.dark .navbar-brand i {
+    color: #e8eaf0;
+}
+
+body.dark #nav .navbar-brand span {
+    color: #e8eaf0;
+}
+
+body.dark #center {
+    color: #7aa4ff;
+    text-shadow: none;
+}
+
+body.dark #centerSide {
+    color: #7aa4ff;
+    text-shadow: none;
+}
+
+body.dark #nav .navbar-brand .bi-p-circle-fill {
+    color: #e8eaf0;
+}
+
+body.dark .sideTopRow .bi-p-circle-fill {
+    color: #e8eaf0;
+}
+body.dark .aff-contain {
+    background: #0a0e1a;
+}
+body.dark #aff-section > section.container > h2{
+    color: white !important;
+}
+body.dark #aff-section {
+    background: linear-gradient(to bottom, #0d1117, #111827);
+}
+
+body.dark .affiliate-hero {
+    background: linear-gradient(135deg, #020a3a 0%, #3d0103 100%);
+}
+
+body.dark .step-card {
+    background: #111827;
+    border-color: rgba(255, 255, 255, 0.08);
+    color: #e8eaf0;
+}
+
+body.dark .step-card h4 {
+    color: #e8eaf0;
+}
+
+body.dark .step-card p {
+    color: #8892a4;
+}
+
+body.dark .commission-table {
+    background: #111827;
+    box-shadow: none;
+}
+
+body.dark .commission-table tbody {
+    background: #111827;
+}
+
+body.dark .commission-table tbody tr {
+    background: #111827;
+}
+
+body.dark .commission-table tbody td {
+    color: #e8eaf0;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .table-hover tbody tr:hover {
+    background: #0f1729;
+    color: #e8eaf0;
+}
+
+body.dark .cta-section {
+    background: #0f1729;
+}
+
+body.dark .cta-section h2 {
+    color: #e84040;
+}
+
+body.dark .cta-section p {
+    color: #8892a4;
+}
+
+body.dark .cta-section .bg-white {
+    background: #111827 !important;
+}
+
+body.dark .cta-section .form-label {
+    color: #e8eaf0;
+}
+
+body.dark .cta-section .form-control {
+    background: #0a0e1a;
+    color: #e8eaf0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Dark and light mode end*/
 #hamburger {
     background: transparent;
     border: none;
