@@ -5,6 +5,9 @@ function closePopup() {
 
 $(document).ready(function () {
 
+    function pauseMarquee() { $('marquee')[0].stop(); }
+    function startMarquee() { $('marquee')[0].start(); }
+
     $('.tab-btn').click(function () {
         $('.tab-btn').removeClass('active');
         $(this).addClass('active');
@@ -86,6 +89,7 @@ $(document).ready(function () {
         $('.tab-btn').removeClass('active');
         $('.tab-btn[data-cat="' + cat + '"]').addClass('active');
         applyFilters();
+        pauseMarquee();
     });
 
     // ── Category Slider click ──
@@ -96,119 +100,164 @@ $(document).ready(function () {
         $('.tab-btn').removeClass('active');
         $('.tab-btn[data-cat="' + cat + '"]').addClass('active');
         applyFilters();
+        pauseMarquee();
     });
 
     $(".probtn-close").click(function () {
         $(".pro-contain").css({ display: "none" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $(".promenu-open").click(function () {
         $(".pro-contain").css({ display: "block" });
         $("#overlay").css({ display: "block" });
+        pauseMarquee();
     });
 
     $(".conbtn-close").click(function () {
         $(".contact-contain").css({ display: "none" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $(".conmenu-open").click(function () {
         $(".contact-contain").fadeIn(500);
         $("#overlay").css({ display: "block" });
+        pauseMarquee();
     });
 
     $("#hamburger").click(function () {
         $("#sideMenu").css({ left: "0" });
         $("#overlay").css({ display: "block" });
+        pauseMarquee();
     });
 
     $(".closeBtn").click(function () {
         $("#sideMenu").css({ left: "-350vw" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $("#overlay").click(function () {
         $(".pro-contain, .contact-contain, .faqs-contain, .aff-contain, .otrack-contain, .myacc-contain, .quicko-contain, .catalog-contain, .service-contain").css({ display: "none" });
         $("#sideMenu").css({ left: "-350vw" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $(".faqbtn-close").click(function () {
         $(".faqs-contain").css({ display: "none" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $(".faqmenu-open").click(function () {
         $(".faqs-contain").fadeIn(500);
         $("#overlay").css({ display: "block" });
+        pauseMarquee();
     });
 
     $(".affbtn-close").click(function () {
         $(".aff-contain").css({ display: "none" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $(".affmenu-open").click(function () {
         $(".aff-contain").fadeIn(500);
         $("#overlay").css({ display: "block" });
+        pauseMarquee();
     });
 
     $(".otrackbtn-close").click(function () {
         $(".otrack-contain").css({ display: "none" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $(".otrack-open").click(function () {
         $(".otrack-contain").fadeIn(500);
         $("#overlay").css({ display: "block" });
+        pauseMarquee();
     });
 
     $(".myacc-open").click(function () {
         $(".myacc-contain").fadeIn(500);
         $("#overlay").css({ display: "block" });
+        pauseMarquee();
     });
 
     $(".myaccbtn-close").click(function () {
         $(".myacc-contain").css({ display: "none" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $(".quicko-open").click(function () {
         $(".quicko-contain").fadeIn(500);
         $("#overlay").css({ display: "block" });
+        pauseMarquee();
     });
 
     $(".quickobtn-close").click(function () {
         $(".quicko-contain").css({ display: "none" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $(".catalog-open").click(function () {
         $(".catalog-contain").fadeIn(500);
         $("#overlay").css({ display: "block" });
+        pauseMarquee();
     });
 
     $(".catalogbtn-close").click(function () {
         $(".catalog-contain").css({ display: "none" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $(".service-open").click(function () {
         $(".service-contain").fadeIn(500);
         $("#overlay").css({ display: "block" });
+        pauseMarquee();
     });
 
     $(".servicebtn-close").click(function () {
         $(".service-contain").css({ display: "none" });
         $("#overlay").css({ display: "none" });
+        startMarquee();
     });
 
     $("#blur-bg").click(function () {
         $("#popupBox").css({ display: "none" });
         $("#blur-bg").css({ display: "none" });
     });
-    $(".side-links").click(function(){
+
+    $(".side-links").click(function () {
         $("#sideMenu").css({ left: "-350vw" });
-    })
+    });
+
+    // ── Dark Mode ──
+    $('#dark-mode').click(function () {
+        $('body').addClass('dark');
+        $('#dark-mode').hide();
+        $('#light-mode').show();
+        localStorage.setItem('theme', 'dark');
+    });
+
+    $('#light-mode').click(function () {
+        $('body').removeClass('dark');
+        $('#light-mode').hide();
+        $('#dark-mode').show();
+        localStorage.setItem('theme', 'light');
+    });
+
+    if (localStorage.getItem('theme') === 'dark') {
+        $('body').addClass('dark');
+        $('#dark-mode').hide();
+        $('#light-mode').show();
+    }
+
 });
