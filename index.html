@@ -135,7 +135,7 @@
                 <li>
                     <input type="checkbox" id="cat8">
                     <label for="cat8">Tablets <span
-                            class=/"arrow">&#8250;</span></label>
+                            class="arrow">&#8250;</span></label>
                     <ul>
                         <li><a href="#" class="side-cat-link" data-cat="tablets">Apple iPad</a></li>
 <li><a href="#" class="side-cat-link" data-cat="tablets">Samsung Galaxy Tab</a></li>
@@ -314,7 +314,6 @@
         <!-- Products Section -->
         <div class="pro-contain">
             <div id="products-section">
-
                 <div id="products-header">
                     <h2>Our <span>Products</span></h2>
                     <div class="text-end p-2" bis_skin_checked="1">
@@ -323,25 +322,28 @@
                     </div>
                 </div>
 
-                <!-- Category Tabs -->
+                <div class="product-item">            
+                    <div class="text-end p-2">
+                        <button class="btn-close prodbtn-close" aria-label="Close"></button>
+                    </div>    
+                    <img src="" alt="" class="prod-img">
+                    <div class="prod-name"></div>
+                    <div class="prod-price"></div>
+                    <div class="prod-detail"></div>
+                </div>
+
                 <div id="product-tabs">
                     <button class="tab-btn active" data-cat="all">All</button>
                     <button class="tab-btn" data-cat="mobiles">Mobiles</button>
                     <button class="tab-btn" data-cat="earbuds">Earbuds</button>
-                    <button class="tab-btn" data-cat="watches">Smart
-                        Watches</button>
+                    <button class="tab-btn" data-cat="watches">Smart Watches</button>
                     <button class="tab-btn" data-cat="tablets">Tablets</button>
-                    <button class="tab-btn" data-cat="powerbanks">Power
-                        Banks</button>
-                    <button class="tab-btn"
-                        data-cat="speakers">Speakers</button>
-                    <button class="tab-btn"
-                        data-cat="chargers">Chargers</button>
-                    <button class="tab-btn"
-                        data-cat="trimmers">Trimmers</button>
+                    <button class="tab-btn" data-cat="powerbanks">Power Banks</button>
+                    <button class="tab-btn" data-cat="speakers">Speakers</button>
+                    <button class="tab-btn" data-cat="chargers">Chargers</button>
+                    <button class="tab-btn" data-cat="trimmers">Trimmers</button>
                 </div>
 
-                <!-- Filters -->
                 <div id="product-filters">
                     <div class="filter-group">
                         <label>Brand</label>
@@ -350,9 +352,8 @@
                             <option value="samsung">Samsung</option>
                             <option value="apple">Apple</option>
                             <option value="xiaomi">Xiaomi</option>
-                            <option value="oneplus">oneplus</option>
+                            <option value="oneplus">OnePlus</option>
                             <option value="Realme">Realme</option>
-
                         </select>
                     </div>
                     <div class="filter-group">
@@ -360,12 +361,9 @@
                         <select id="filter-price">
                             <option value="all">All Prices</option>
                             <option value="0-5000">Under RS 5,000</option>
-                            <option value="5000-30000">RS 5,000 –
-                                30,000</option>
-                            <option value="30000-100000">RS 30,000 –
-                                1,00,000</option>
-                            <option value="100000-999999">Above RS
-                                1,00,000</option>
+                            <option value="5000-30000">RS 5,000 – 30,000</option>
+                            <option value="30000-100000">RS 30,000 – 1,00,000</option>
+                            <option value="100000-999999">Above RS 1,00,000</option>
                         </select>
                     </div>
                     <div class="filter-group">
@@ -379,289 +377,10 @@
                     <button id="reset-filters">Reset</button>
                 </div>
 
-                <!-- No Results -->
                 <div id="no-results">No products found.</div>
 
-                <!-- Product Grid -->
-                <div id="product-grid">
+                <div id="product-grid"></div>
 
-                    <!-- Mobiles -->
-                    <div class="product-card" data-cat="mobiles"
-                        data-brand="samsung" data-price="424999">
-                        <img src="assets/Latest Deals/samsung s26 ultra.png"
-                            alt="Samsung S26 Ultra">
-                        <div class="product-info">
-                            <span class="product-tag">Mobiles</span>
-                            <p class="product-name">Samsung Galaxy S26 Ultra</p>
-                            <p class="product-price"><sup>RS</sup> 4,24,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="mobiles"
-                        data-brand="apple" data-price="359999">
-                        <img
-                            src="assets/category-slider/mobile.png"
-                            alt="iPhone 16">
-                        <div class="product-info">
-                            <span class="product-tag">Mobiles</span>
-                            <p class="product-name">Apple iPhone 16</p>
-                            <p class="product-price"><sup>RS</sup> 3,59,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="mobiles"
-                        data-brand="xiaomi" data-price="89999">
-                        <img
-                            src="assets/category-slider/mobile.png"
-                            alt="Xiaomi 14">
-                        <div class="product-info">
-                            <span class="product-tag">Mobiles</span>
-                            <p class="product-name">Xiaomi 14 Pro</p>
-                            <p class="product-price"><sup>RS</sup> 89,999</p>
-                        </div>
-                    </div>
-
-                    <!-- Earbuds -->
-                    <div class="product-card" data-cat="earbuds"
-                        data-brand="apple" data-price="49999">
-                        <img src="assets/Latest Deals/Ear buds wirless.png"
-                            alt="AirPods Pro">
-                        <div class="product-info">
-                            <span class="product-tag">Earbuds</span>
-                            <p class="product-name">Apple AirPods Pro</p>
-                            <p class="product-price"><sup>RS</sup> 49,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="earbuds"
-                        data-brand="samsung" data-price="24999">
-                        <img src="assets/Latest Deals/Ear buds wirless.png"
-                            alt="Galaxy Buds">
-                        <div class="product-info">
-                            <span class="product-tag">Earbuds</span>
-                            <p class="product-name">Samsung Galaxy Buds 2</p>
-                            <p class="product-price"><sup>RS</sup> 24,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="earbuds"
-                        data-brand="anker" data-price="3999">
-                        <img src="assets/Latest Deals/Ear buds wirless.png"
-                            alt="Soundcore">
-                        <div class="product-info">
-                            <span class="product-tag">Earbuds</span>
-                            <p class="product-name">Anker Soundcore P3</p>
-                            <p class="product-price"><sup>RS</sup> 3,999</p>
-                        </div>
-                    </div>
-
-                    <!-- Smart Watches -->
-                    <div class="product-card" data-cat="watches"
-                        data-brand="apple" data-price="129999">
-                        <img src="assets/Latest Deals/smart watch.png"
-                            alt="Apple Watch">
-                        <div class="product-info">
-                            <span class="product-tag">Smart Watches</span>
-                            <p class="product-name">Apple Watch Series 10</p>
-                            <p class="product-price"><sup>RS</sup> 1,29,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="watches"
-                        data-brand="samsung" data-price="69999">
-                        <img src="assets/Latest Deals/smart watch.png"
-                            alt="Galaxy Watch">
-                        <div class="product-info">
-                            <span class="product-tag">Smart Watches</span>
-                            <p class="product-name">Samsung Galaxy Watch 7</p>
-                            <p class="product-price"><sup>RS</sup> 69,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="watches"
-                        data-brand="xiaomi" data-price="4999">
-                        <img src="assets/Latest Deals/smart watch.png"
-                            alt="Xiaomi Band">
-                        <div class="product-info">
-                            <span class="product-tag">Smart Watches</span>
-                            <p class="product-name">Xiaomi Smart Band 9</p>
-                            <p class="product-price"><sup>RS</sup> 4,999</p>
-                        </div>
-                    </div>
-
-                    <!-- Tablets -->
-                    <div class="product-card" data-cat="tablets"
-                        data-brand="samsung" data-price="186999">
-                        <img src="assets/Latest Deals/s11 tab ultra.png"
-                            alt="Galaxy Tab">
-                        <div class="product-info">
-                            <span class="product-tag">Tablets</span>
-                            <p class="product-name">Samsung Galaxy Tab S11</p>
-                            <p class="product-price"><sup>RS</sup> 1,86,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="tablets"
-                        data-brand="apple" data-price="299999">
-                        <img
-                            src="assets/category-slider/tablet.png"
-                            alt="iPad Pro">
-                        <div class="product-info">
-                            <span class="product-tag">Tablets</span>
-                            <p class="product-name">Apple iPad Pro M4</p>
-                            <p class="product-price"><sup>RS</sup> 2,99,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="tablets"
-                        data-brand="xiaomi" data-price="79999">
-                        <img
-                            src="assets/category-slider/tablet.png"
-                            alt="Xiaomi Pad">
-                        <div class="product-info">
-                            <span class="product-tag">Tablets</span>
-                            <p class="product-name">Xiaomi Pad 7 Pro</p>
-                            <p class="product-price"><sup>RS</sup> 79,999</p>
-                        </div>
-                    </div>
-
-                    <!-- Power Banks -->
-                    <div class="product-card" data-cat="powerbanks"
-                        data-brand="anker" data-price="7999">
-                        <img
-                            src="assets/category-slider/powerbank.png"
-                            alt="Anker Power Bank">
-                        <div class="product-info">
-                            <span class="product-tag">Power Banks</span>
-                            <p class="product-name">Anker 20000mAh Power
-                                Bank</p>
-                            <p class="product-price"><sup>RS</sup> 7,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="powerbanks"
-                        data-brand="samsung" data-price="4999">
-                        <img
-                            src="assets/category-slider/powerbank.png"
-                            alt="Samsung Power Bank">
-                        <div class="product-info">
-                            <span class="product-tag">Power Banks</span>
-                            <p class="product-name">Samsung 10000mAh Power
-                                Bank</p>
-                            <p class="product-price"><sup>RS</sup> 4,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="powerbanks"
-                        data-brand="xiaomi" data-price="3499">
-                        <img
-                            src="assets/category-slider/powerbank.png"
-                            alt="Xiaomi Power Bank">
-                        <div class="product-info">
-                            <span class="product-tag">Power Banks</span>
-                            <p class="product-name">Xiaomi 10000mAh Redmi</p>
-                            <p class="product-price"><sup>RS</sup> 3,499</p>
-                        </div>
-                    </div>
-
-                    <!-- Speakers -->
-                    <div class="product-card" data-cat="speakers"
-                        data-brand="jbl" data-price="14999">
-                        <img
-                            src="assets/category-slider/bluetooth speaker.png"
-                            alt="JBL Charge">
-                        <div class="product-info">
-                            <span class="product-tag">Speakers</span>
-                            <p class="product-name">JBL Charge 5</p>
-                            <p class="product-price"><sup>RS</sup> 14,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="speakers"
-                        data-brand="sony" data-price="19999">
-                        <img
-                            src="assets/category-slider/bluetooth speaker.png"
-                            alt="Sony Speaker">
-                        <div class="product-info">
-                            <span class="product-tag">Speakers</span>
-                            <p class="product-name">Sony SRS-XB33</p>
-                            <p class="product-price"><sup>RS</sup> 19,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="speakers"
-                        data-brand="anker" data-price="4999">
-                        <img
-                            src="assets/category-slider/bluetooth speaker.png"
-                            alt="Anker Speaker">
-                        <div class="product-info">
-                            <span class="product-tag">Speakers</span>
-                            <p class="product-name">Anker Soundcore 3</p>
-                            <p class="product-price"><sup>RS</sup> 4,999</p>
-                        </div>
-                    </div>
-
-                    <!-- Chargers -->
-                    <div class="product-card" data-cat="chargers"
-                        data-brand="anker" data-price="2999">
-                        <img
-                            src="assets/category-slider/charger.png"
-                            alt="Anker Charger">
-                        <div class="product-info">
-                            <span class="product-tag">Chargers</span>
-                            <p class="product-name">Anker 65W GaN Charger</p>
-                            <p class="product-price"><sup>RS</sup> 2,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="chargers"
-                        data-brand="samsung" data-price="1999">
-                        <img
-                            src="assets/category-slider/charger.png"
-                            alt="Samsung Charger">
-                        <div class="product-info">
-                            <span class="product-tag">Chargers</span>
-                            <p class="product-name">Samsung 45W Super Fast
-                                Charger</p>
-                            <p class="product-price"><sup>RS</sup> 1,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="chargers"
-                        data-brand="apple" data-price="3499">
-                        <img
-                            src="assets/category-slider/charger.png"
-                            alt="Apple Charger">
-                        <div class="product-info">
-                            <span class="product-tag">Chargers</span>
-                            <p class="product-name">Apple 30W USB-C Charger</p>
-                            <p class="product-price"><sup>RS</sup> 3,499</p>
-                        </div>
-                    </div>
-
-                    <!-- Trimmers -->
-                    <div class="product-card" data-cat="trimmers"
-                        data-brand="philips" data-price="4999">
-                        <img
-                            src="assets/category-slider/trimmer.png"
-                            alt="Philips Trimmer">
-                        <div class="product-info">
-                            <span class="product-tag">Trimmers</span>
-                            <p class="product-name">Philips Series 5000
-                                Trimmer</p>
-                            <p class="product-price"><sup>RS</sup> 4,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="trimmers"
-                        data-brand="philips" data-price="2999">
-                        <img
-                            src="assets/category-slider/trimmer.png"
-                            alt="Philips Shaver">
-                        <div class="product-info">
-                            <span class="product-tag">Trimmers</span>
-                            <p class="product-name">Philips AquaTouch Shaver</p>
-                            <p class="product-price"><sup>RS</sup> 2,999</p>
-                        </div>
-                    </div>
-                    <div class="product-card" data-cat="trimmers"
-                        data-brand="sony" data-price="3499">
-                        <img
-                            src="assets/category-slider/trimmer.png"
-                            alt="Trimmer">
-                        <div class="product-info">
-                            <span class="product-tag">Trimmers</span>
-                            <p class="product-name">Panasonic Beard Trimmer</p>
-                            <p class="product-price"><sup>RS</sup> 3,499</p>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
 
@@ -1501,6 +1220,7 @@
         </div>
     </div>
 </footer>
+<div id="toast-container"></div>
 
             <script
                 src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
