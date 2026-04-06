@@ -175,12 +175,6 @@ $(document).ready(function () {
         $("#overlay").css({ display: "none" });
         startMarquee();
     });
-        $(".btn-close").click(function () {
-        $("#popupBox").css({ display: "none" });
-        $("#blur-bg").css({ display: "none" });
-        $("#overlay").css({ display: "none" });
-        startMarquee();
-    });
 
     $(".otrack-open").click(function () {
         $(".otrack-contain").fadeIn(500);
@@ -237,9 +231,14 @@ $(document).ready(function () {
     });
 
     $("#blur-bg").click(function () {
-        $("#popupBox").css({ display: "none" });
-        $("#blur-bg").css({ display: "none" });
+        $("#popupBox").css({ display: "none !important" });
+        $("#blur-bg").css({ display: "none !important" });
     });
+    $(".btn-close").click(function () {
+        $("#popupBox").css({ display: "none !important" });
+        $("#blur-bg").css({ display: "none !important" });
+    });
+
 
     $(".side-links").click(function () {
         $("#sideMenu").css({ left: "-350vw" });
