@@ -175,6 +175,12 @@ $(document).ready(function () {
         $("#overlay").css({ display: "none" });
         startMarquee();
     });
+        $(".btn-close").click(function () {
+        $("#popupBox").css({ display: "none" });
+        $("#blur-bg").css({ display: "none" });
+        $("#overlay").css({ display: "none" });
+        startMarquee();
+    });
 
     $(".otrack-open").click(function () {
         $(".otrack-contain").fadeIn(500);
